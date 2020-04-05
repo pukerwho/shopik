@@ -1,7 +1,6 @@
 <?php 
 add_action( 'customize_register', 'customizer_init' );
 add_action( 'customize_preview_init', 'customizer_js_file' );
-add_action( 'wp_head', 'customizer_style_tag' );
 
 function customizer_init( WP_Customize_Manager $wp_customize ){
 
