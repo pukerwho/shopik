@@ -10,7 +10,7 @@ Template Name: ГЛАВНАЯ
 	<div class="hero py-10 lg:py-24">
 		<div class="container mx-auto px-6 lg:px-0">
 			<div class="w-full lg:w-4/5 flex justify-center mx-auto">
-				<div class="brand flex flex-col lg:flex-row justify-center lg:justify-between">
+				<div class="brand flex flex-col lg:flex-row justify-center items-center lg:justify-between">
 					<div class="w-full lg:w-1/2 pr-0 lg:pr-10 mb-10 lg:mb-0">
 						<div class="brand_title mb-4">
 							<?php echo get_theme_mod( 'first_screen_title' ); ?>

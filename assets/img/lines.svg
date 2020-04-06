@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 346.251 289.256">
+  <defs>
+    <style>
+      .cls-1, .cls-2, .cls-3 {
+        fill: none;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+      }
+
+      .cls-1 {
+        stroke: #00bbf1;
+        stroke-width: 7px;
+      }
+
+      .cls-2 {
+        stroke: #f3478c;
+      }
+
+      .cls-3 {
+        stroke: #00c6cc;
+      }
+    </style>
+  </defs>
+  <title>lines</title>
+  <g id="Шар_2" data-name="Шар 2">
+    <g id="BACKGROUND_1" data-name="BACKGROUND 1">
+      <g>
+        <line class="cls-1" x1="39.53" y1="285.756" x2="300.589" y2="24.696"/>
+        <line class="cls-2" x1="75.689" y1="270.815" x2="345.751" y2="0.5"/>
+        <line class="cls-3" x1="162.514" y1="123.486" x2="219.931" y2="66.016"/>
+        <line class="cls-2" x1="0.5" y1="248.445" x2="213.144" y2="35.6"/>
+      </g>
+    </g>
+  </g>
+</svg>
