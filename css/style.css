@@ -1,4 +1,4 @@
-/*$url_theme: /wp-content/themes/shopik;*/
+/*$url_theme: /mythemetwo/shoptheme/wp-content/themes/shopik;*/
 html {
   line-height: 1.15;
   /* 1 */
@@ -41168,7 +41168,7 @@ h2 {
     position: absolute;
     top: 0;
     left: 5%;
-    background: url(/mythemetwo/shoptheme/wp-content/themes/shopik/assets/img/bg-img.svg);
+    background: url(/wp-content/themes/shopik/assets/img/bg-img.svg);
     background-size: contain;
     background-repeat: no-repeat;
     z-index: -1;
