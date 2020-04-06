@@ -41367,6 +41367,15 @@ h2 {
   .delivery_text {
     font-size: 1.25rem;
     line-height: 2; }
+  .delivery:after {
+    content: '';
+    width: 100%;
+    background: url(https://1c126ibo0f-flywheel.netdna-ssl.com/wp-content/themes/mini-monarch/img/section/transition-dots-bottom.svg);
+    position: absolute;
+    bottom: 0;
+    height: 100px;
+    background-size: contain;
+    background-repeat: no-repeat; }
 
 .product_title {
   font-family: 'Bellota Text', cursive;
