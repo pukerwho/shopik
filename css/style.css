@@ -41096,6 +41096,14 @@ h2 {
     z-index: -1;
     opacity: 0.75; }
 
+.btn {
+  position: relative;
+  text-transform: uppercase;
+  border: 1px solid;
+  border-radius: 3px;
+  cursor: pointer;
+  padding: 10px 20px; }
+
 .btn_more a {
   position: relative;
   text-transform: uppercase;
@@ -41124,6 +41132,33 @@ h2 {
 .cart_bug {
   position: relative;
   padding-right: 30px; }
+
+.footer {
+  position: relative;
+  background-color: #ffffff; }
+  .footer h2 {
+    font-size: 1.5rem;
+    text-transform: uppercase; }
+  .footer:after {
+    content: '';
+    width: 100%;
+    height: 50px;
+    background: url(https://1c126ibo0f-flywheel.netdna-ssl.com/wp-content/themes/mini-monarch/img/section/transition-dots-bottom.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: -100% 0%;
+    position: absolute;
+    top: 15px;
+    transform: translateY(-100%);
+    pointer-events: none; }
+  .footer .btn {
+    background: linear-gradient(90deg, #d962bf, #ff72c0); }
+
+.copyright {
+  border-top: 1px solid rgba(0, 0, 0, 0.15); }
+  .copyright a {
+    font-family: 'Bellota Text', cursive;
+    font-weight: 700; }
 
 /* PAGES */
 .brand_title {
@@ -41258,8 +41293,7 @@ h2 {
 
 .product_cat {
   background-color: #cbaa83;
-  margin-top: 358px;
-  margin-bottom: -358px; }
+  margin-top: 358px; }
   .product_cat_block {
     top: -358px; }
   .product_cat_item {
@@ -41356,26 +41390,16 @@ h2 {
 .delivery {
   background-color: #faf8eb;
   position: relative;
-  top: -250px;
-  margin-bottom: -250px; }
+  margin-top: -250px; }
   .delivery h2 {
     font-size: 2.5rem; }
   .delivery_block {
-    padding-top: 400px; }
+    padding-top: 100px; }
     .delivery_block img {
       min-width: 50px; }
   .delivery_text {
     font-size: 1.25rem;
     line-height: 2; }
-  .delivery:after {
-    content: '';
-    width: 100%;
-    background: url(https://1c126ibo0f-flywheel.netdna-ssl.com/wp-content/themes/mini-monarch/img/section/transition-dots-bottom.svg);
-    position: absolute;
-    bottom: 0;
-    height: 100px;
-    background-size: contain;
-    background-repeat: no-repeat; }
 
 .product_title {
   font-family: 'Bellota Text', cursive;
