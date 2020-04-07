@@ -1,5 +1,8 @@
 		</section>
 		<footer class="footer py-10 mt-12">
+			<div class="footer_ball">
+				<img src="https://static.tildacdn.com/tild6263-3566-4333-a232-613661363237/28.svg" alt="" width="80px">
+			</div>
 			<div class="container mx-auto px-4 lg:px-0">
 				<div class="flex flex-col lg:flex-row mb-8">
 					<div class="w-full lg:w-1/3">
