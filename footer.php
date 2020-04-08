@@ -45,9 +45,21 @@
 									<?php _e('Телефоны', 'shop'); ?>:
 								</div>
 								<div class="flex flex-col">
-									<a href="#">099-011-111-01</a>
-									<a href="#">099-011-111-01</a>
-									<a href="#">099-011-111-01</a>
+									<?php if (get_theme_mod( 'contact_phone_one' )): ?>
+										<a href="tel:<?php echo get_theme_mod( 'contact_phone_one' ); ?>">
+											<?php echo get_theme_mod( 'contact_phone_one' ); ?>
+										</a>
+									<?php endif; ?>
+									<?php if (get_theme_mod( 'contact_phone_two' )): ?>
+										<a href="tel:<?php echo get_theme_mod( 'contact_phone_two' ); ?>">
+											<?php echo get_theme_mod( 'contact_phone_two' ); ?>
+										</a>
+									<?php endif; ?>
+									<?php if (get_theme_mod( 'contact_phone_three' )): ?>
+										<a href="tel:<?php echo get_theme_mod( 'contact_phone_three' ); ?>">
+											<?php echo get_theme_mod( 'contact_phone_three' ); ?>
+										</a>
+									<?php endif; ?>
 								</div>
 							</div>
 							<div class="flex mb-4">
@@ -55,7 +67,7 @@
 									<?php _e('Email', 'shop'); ?>:
 								</div>
 								<div class="flex flex-col">
-									<a href="#">email@email.com</a>
+									<a href="mailto:<?php echo get_theme_mod( 'contact_email' ); ?>"><?php echo get_theme_mod( 'contact_email' ); ?></a>
 								</div>
 							</div>
 							<div class="flex mb-4">
@@ -63,7 +75,7 @@
 									<?php _e('Адрес', 'shop'); ?>:
 								</div>
 								<div class="flex flex-col">
-									Украина, Область, Город
+									<?php echo get_theme_mod( 'contact_address' ); ?>
 								</div>
 							</div>
 						</div>

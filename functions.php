@@ -62,4 +62,23 @@ function my_custom_upload_mimes($mimes = array()) {
 add_action('upload_mimes', 'my_custom_upload_mimes');
 
 
+add_action( 'woocommerce_after_shop_loop_item', 'bbloomer_echo_stock_variations_loop' );
+    
+function bbloomer_echo_stock_variations_loop(){
+    global $product;
+    if ( $product->get_type() == 'variable' ) {
+        foreach ( $product->get_available_variations() as $key ) {
+            $attr_string = array();
+            foreach ( $key['attributes'] as $attr_name => $attr_value ) {
+                $attr_string[] = $attr_value;
+            }
+            if ( $key['max_qty'] > 0 ) { 
+              echo '<br/>' . implode( ', ', $attr_string ) . ': ' . $key['max_qty'] . ' in stock'; 
+            } else { 
+              echo '<br/>' . implode(', ', $attr_string ) . ': out of stock'; 
+            }
+        }
+    }
+}
+
 ?>

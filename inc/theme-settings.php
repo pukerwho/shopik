@@ -134,6 +134,87 @@ function customizer_init( WP_Customize_Manager $wp_customize ){
     ]);
   }
 
+  // Блок Контакты
+  if ( $section = 'block_contact' ) {
+
+    $wp_customize->add_section( $section, [
+      'title' => 'Контакты',
+      'priority'  => 200,
+    ]);
+
+    //Адрес
+    $setting = 'contact_address';
+    $wp_customize->add_setting( $setting, [
+      'default'   => '',
+      'transport' => $transport
+    ] );
+    $wp_customize->add_control( $setting, [
+      'section'  => $section,
+      'label'    => 'Адрес',
+      'type'     => 'textarea'
+    ]);
+
+    //Email
+    $setting = 'contact_email';
+    $wp_customize->add_setting( $setting, [
+      'default'   => '',
+      'transport' => $transport
+    ] );
+    $wp_customize->add_control( $setting, [
+      'section'  => $section,
+      'label'    => 'Email',
+      'type'     => 'text'
+    ]);
+
+    //Телефон №1
+    $setting = 'contact_phone_one';
+    $wp_customize->add_setting( $setting, [
+      'default'   => '',
+      'transport' => $transport
+    ] );
+    $wp_customize->add_control( $setting, [
+      'section'  => $section,
+      'label'    => 'Телефон №1',
+      'type'     => 'text'
+    ]);
+
+    //Телефон №2
+    $setting = 'contact_phone_two';
+    $wp_customize->add_setting( $setting, [
+      'default'   => '',
+      'transport' => $transport
+    ] );
+    $wp_customize->add_control( $setting, [
+      'section'  => $section,
+      'label'    => 'Телефон №2',
+      'type'     => 'text'
+    ]);
+
+    //Телефон №3
+    $setting = 'contact_phone_three';
+    $wp_customize->add_setting( $setting, [
+      'default'   => '',
+      'transport' => $transport
+    ] );
+    $wp_customize->add_control( $setting, [
+      'section'  => $section,
+      'label'    => 'Телефон №3',
+      'type'     => 'text'
+    ]);
+
+    //Шорткод для обратного звонка
+    $setting = 'contact_callback';
+    $wp_customize->add_setting( $setting, [
+      'default'   => '',
+      'transport' => $transport
+    ] );
+    $wp_customize->add_control( $setting, [
+      'section'  => $section,
+      'label'    => 'Шорткод для обратного звонка',
+      'type'     => 'text'
+    ]);
+  }
+
   // Секция
   if( $section = 'display_options' ){
 
