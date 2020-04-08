@@ -1,5 +1,5 @@
 		</section>
-		<footer class="footer py-10 mt-12">
+		<footer class="footer py-10">
 			<div class="footer_ball">
 				<img src="https://static.tildacdn.com/tild6263-3566-4333-a232-613661363237/28.svg" alt="" width="80px">
 			</div>
@@ -80,7 +80,7 @@
 							</div>
 						</div>
 						<div>
-							<div class="btn text-white text-center">
+							<div class="btn text-white text-center modal_click_js" data-modal-id="modal_callback">
 								<?php _e('Заказать обратный звонок', 'shop'); ?>
 							</div>
 						</div>
@@ -91,6 +91,22 @@
 				</div>
 			</div>
 		</footer>
+
+		<!-- ФОРМЫ -->
+		<div class="modal modal_order" data-modal-id="modal_callback">
+    	<div class="modal_block rounded-lg shadow-lg pb-0 lg:pb-12">
+    		<div class="px-4 py-8 lg:px-12">
+    			<h3 class="secondary-font text-black text-3xl text-center uppercase mb-6"><?php _e( 'Обратный звонок', 'shop' ); ?></h3>
+    			<div>
+    				<?php 
+              $form_callback = get_theme_mod( 'contact_callback' ); 
+              echo do_shortcode(''. $form_callback .'');
+            ?>
+    			</div>
+    		</div>
+    	</div>
+    </div>
+    <div class="modal_bg"></div>
 	<?php wp_footer(); ?>
 	</body>
 </html>
