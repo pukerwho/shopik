@@ -108,7 +108,7 @@ Template Name: ГЛАВНАЯ
 					<h2><?php _e('Популярные товары','shop'); ?></h2>
 					<img src="<?php bloginfo('template_url'); ?>/assets/img/vesh.svg" alt="" width="125px">
 				</div>
-				<div class="w-4/5 flex flex-wrap flex-col relative mx-auto mb-16">
+				<div class="w-full lg:w-4/5 flex flex-wrap flex-col relative mx-auto mb-16">
 					<?php 
 						$first_product_cat = get_theme_mod( 'product_cat_first' );
 						$product_cat_query = new WP_Query( array( 
@@ -142,7 +142,7 @@ Template Name: ГЛАВНАЯ
 						</div>
 					<?php wp_reset_postdata(); endwhile; endif;  ?>
 				</div>
-				<div class="w-4/5 flex flex-wrap flex-col relative mx-auto mb-16 product_cat_second z-10">
+				<div class="w-full lg:w-4/5 flex flex-wrap flex-col relative mx-auto mb-16 product_cat_second z-10">
 					<?php 
 						$first_product_cat = get_theme_mod( 'product_cat_second' );
 						$product_cat_query = new WP_Query( array( 
@@ -176,7 +176,7 @@ Template Name: ГЛАВНАЯ
 						</div>
 					<?php wp_reset_postdata(); endwhile; endif;  ?>
 				</div>
-				<div class="w-4/5 flex flex-wrap flex-col relative mx-auto product_cat_third z-10">
+				<div class="w-full lg:w-4/5 flex flex-wrap flex-col relative mx-auto product_cat_third z-10">
 					<?php 
 						$first_product_cat = get_theme_mod( 'product_cat_third' );
 						$product_cat_query = new WP_Query( array( 
