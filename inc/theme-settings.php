@@ -166,40 +166,64 @@ function customizer_init( WP_Customize_Manager $wp_customize ){
       'type'     => 'text'
     ]);
 
-    //Телефон №1
-    $setting = 'contact_phone_one';
+    //Телефон Life
+    $setting = 'contact_phone_life';
     $wp_customize->add_setting( $setting, [
       'default'   => '',
       'transport' => $transport
     ] );
     $wp_customize->add_control( $setting, [
       'section'  => $section,
-      'label'    => 'Телефон №1',
+      'label'    => 'Телефон Life',
       'type'     => 'text'
     ]);
 
-    //Телефон №2
-    $setting = 'contact_phone_two';
+    //Телефон Vodafon
+    $setting = 'contact_phone_vodafon';
     $wp_customize->add_setting( $setting, [
       'default'   => '',
       'transport' => $transport
     ] );
     $wp_customize->add_control( $setting, [
       'section'  => $section,
-      'label'    => 'Телефон №2',
+      'label'    => 'Телефон Vodafon',
       'type'     => 'text'
     ]);
 
-    //Телефон №3
-    $setting = 'contact_phone_three';
+    //Телефон Kyivstar
+    $setting = 'contact_phone_kyivstar';
     $wp_customize->add_setting( $setting, [
       'default'   => '',
       'transport' => $transport
     ] );
     $wp_customize->add_control( $setting, [
       'section'  => $section,
-      'label'    => 'Телефон №3',
+      'label'    => 'Телефон Kyivstar',
       'type'     => 'text'
+    ]);
+
+    //Instagram
+    $setting = 'contact_instagram';
+    $wp_customize->add_setting( $setting, [
+      'default'   => '',
+      'transport' => $transport
+    ] );
+    $wp_customize->add_control( $setting, [
+      'section'  => $section,
+      'label'    => 'Instagram',
+      'type'     => 'textarea'
+    ]);
+
+    //Facebook
+    $setting = 'contact_facebook';
+    $wp_customize->add_setting( $setting, [
+      'default'   => '',
+      'transport' => $transport
+    ] );
+    $wp_customize->add_control( $setting, [
+      'section'  => $section,
+      'label'    => 'Facebook',
+      'type'     => 'textarea'
     ]);
 
     //Шорткод для обратного звонка

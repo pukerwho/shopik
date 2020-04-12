@@ -22,28 +22,9 @@
 </head>
 <body <?php echo body_class(); ?>>
   <section id="content" role="main">
-    <header class="header py-4 md:py-8">
+    <header class="header py-4 md:py-3">
       <div class="container mx-auto px-6 lg:px-0">
-        <div class="header_content flex items-center justify-between">
-          <div class="header_left">
-            <div class="logo flex">
-              <img src="<?php bloginfo('template_url'); ?>/assets/img/shopik-logo-4.svg" alt="" width="40px" class="mr-4">
-              <a href="<?php echo home_url(); ?>" class="leading-loose">Shopik</a>
-            </div>
-          </div>
-          <div class="header_right">
-            <a href="<?php echo wc_get_page_permalink( 'cart' ); ?>"><span class="cart_bug hidden lg:block uppercase mr-6">Корзина</span>
-              <span >
-                <?php 
-                  global $woocommerce;
-                  $count = $woocommerce->cart->cart_contents_count;
-                  echo '<span class="cart-count">';
-                  echo $count;
-                  echo '</span>';
-                ?>
-              </span>
-            </a>
-          </div>
-        </div>
+        <?php get_template_part('blocks/header/header-top'); ?>
+        <?php get_template_part('blocks/header/header-bottom'); ?>
       </div>
     </header>

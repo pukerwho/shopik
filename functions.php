@@ -36,6 +36,13 @@ function theme_name_scripts() {
     wp_enqueue_script( 'scripts', get_template_directory_uri() . '/assets/js/scripts.js', '','',true);
 };
 
+//Регистрация меню
+register_nav_menus( array(
+    'head_top_menu' => 'Меню в шапке (верхнее)',
+    'head_bottom_menu' => 'Меню в шапке (нижнее)',
+    'mobile_menu' => 'Мобильное меню',
+) );
+
 //Регистрация сайдбара
 function true_register_wp_sidebars() {
  
@@ -61,5 +68,12 @@ function my_custom_upload_mimes($mimes = array()) {
 
 add_action('upload_mimes', 'my_custom_upload_mimes');
 
+function add_additional_class_on_li($classes, $item, $args) {
+    if(isset($args->add_li_class)) {
+        $classes[] = $args->add_li_class;
+    }
+    return $classes;
+}
+add_filter('nav_menu_css_class', 'add_additional_class_on_li', 1, 3);
 
 ?>

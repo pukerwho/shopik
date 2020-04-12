@@ -7,29 +7,25 @@ Template Name: ГЛАВНАЯ
 <?php get_header(); ?> 
 
 <section id="hero">
-	<div class="hero py-10 lg:py-24">
-		<div class="container mx-auto px-6 lg:px-0">
-			<div class="w-full lg:w-4/5 flex justify-center mx-auto">
-				<div class="brand flex flex-col lg:flex-row justify-center items-center lg:justify-between">
-					<div class="w-full lg:w-1/2 pr-0 lg:pr-10 mb-10 lg:mb-0">
+	<div class="hero px-6 mb-20">
+		<div class="brand h-full" style="background: url(<?php echo get_theme_mod( 'first_screen_img' ); ?>); background-size: cover; background-position: 50%;">
+			<div class="container mx-auto h-full">
+				<div class="flex flex-col justify-center h-full">
+					<div>
 						<div class="brand_title mb-4">
-							<?php echo get_theme_mod( 'first_screen_title' ); ?>
+							<span><?php echo get_theme_mod( 'first_screen_title' ); ?></span>
 						</div>
 						<div class="brand_subtitle mb-10">
 							<?php echo get_theme_mod( 'first_screen_subtitle' ); ?>
 						</div>
 						<div class="brand_description">
 							<?php echo get_theme_mod( 'first_screen_description' ); ?>
-						</div>
-					</div>
-					<div class="w-full lg:w-1/2 pl-0 lg:pl-10">
-						<div class="brand_img">
-							<img src="<?php echo get_theme_mod( 'first_screen_img' ); ?>" alt="">
-						</div>
+						</div>	
 					</div>
 				</div>
 			</div>
 		</div>
+		
 	</div>
 </section>
 

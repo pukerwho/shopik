@@ -45,19 +45,19 @@
 									<?php _e('Телефоны', 'shop'); ?>:
 								</div>
 								<div class="flex flex-col">
-									<?php if (get_theme_mod( 'contact_phone_one' )): ?>
-										<a href="tel:<?php echo get_theme_mod( 'contact_phone_one' ); ?>">
-											<?php echo get_theme_mod( 'contact_phone_one' ); ?>
+									<?php if (get_theme_mod( 'contact_phone_life' )): ?>
+										<a href="tel:<?php echo get_theme_mod( 'contact_phone_life' ); ?>">
+											<?php echo get_theme_mod( 'contact_phone_life' ); ?>
 										</a>
 									<?php endif; ?>
-									<?php if (get_theme_mod( 'contact_phone_two' )): ?>
-										<a href="tel:<?php echo get_theme_mod( 'contact_phone_two' ); ?>">
-											<?php echo get_theme_mod( 'contact_phone_two' ); ?>
+									<?php if (get_theme_mod( 'contact_phone_vodafon' )): ?>
+										<a href="tel:<?php echo get_theme_mod( 'contact_phone_vodafon' ); ?>">
+											<?php echo get_theme_mod( 'contact_phone_vodafon' ); ?>
 										</a>
 									<?php endif; ?>
-									<?php if (get_theme_mod( 'contact_phone_three' )): ?>
-										<a href="tel:<?php echo get_theme_mod( 'contact_phone_three' ); ?>">
-											<?php echo get_theme_mod( 'contact_phone_three' ); ?>
+									<?php if (get_theme_mod( 'contact_phone_kyivstar' )): ?>
+										<a href="tel:<?php echo get_theme_mod( 'contact_phone_kyivstar' ); ?>">
+											<?php echo get_theme_mod( 'contact_phone_kyivstar' ); ?>
 										</a>
 									<?php endif; ?>
 								</div>
