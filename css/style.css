@@ -41081,6 +41081,9 @@ body {
 h2 {
   font-family: 'Bellota Text', cursive; }
 
+input {
+  padding: 0.5rem 0.75rem; }
+
 .with_vesh {
   position: relative; }
   .with_vesh h2 {
@@ -41117,6 +41120,7 @@ h2 {
 .menu-item-has-children {
   position: relative; }
   .menu-item-has-children .sub-menu {
+    min-width: 200px;
     position: absolute;
     background-color: #ffffff;
     border-radius: 0.25rem;
