@@ -4,9 +4,9 @@
 				<img src="https://static.tildacdn.com/tild6263-3566-4333-a232-613661363237/28.svg" alt="" width="80px">
 			</div>
 			<div class="container mx-auto px-4 lg:px-0">
-				<div class="flex flex-col lg:flex-row mb-8">
-					<div class="w-full lg:w-1/3">
-						<h2 class="mb-4">
+				<div class="flex flex-col lg:flex-row mb-4 lg:mb-8">
+					<div class="w-full lg:w-1/3 mb-6 lg:mb-0">
+						<h2 class="text-center lg:text-left mb-4">
 							<?php _e('Каталог', 'shop'); ?>	
 						</h2>
 						<div>
@@ -25,8 +25,8 @@
 							<?php endforeach; ?>
 						</div>
 					</div>
-					<div class="w-full lg:w-1/3">
-						<h2 class="mb-4">
+					<div class="w-full lg:w-1/3 mb-6 lg:mb-0">
+						<h2 class="text-center lg:text-left mb-4">
 							<?php _e('Клиенту', 'shop'); ?>	
 						</h2>
 						<div>
@@ -35,13 +35,13 @@
 							</li>
 						</div>
 					</div>
-					<div class="w-full lg:w-1/3">
+					<div class="w-full lg:w-1/3 mb-6 lg:mb-0">
 						<div class="mb-8">
 							<h2 class="text-center mb-4">
 								<?php _e('Контакты', 'shop'); ?>	
 							</h2>
 							<div class="flex mb-4">
-								<div class="w-1/4 mr-4">
+								<div class="w-1/3 lg:w-1/4 mr-4">
 									<?php _e('Телефоны', 'shop'); ?>:
 								</div>
 								<div class="flex flex-col">
@@ -63,7 +63,7 @@
 								</div>
 							</div>
 							<div class="flex mb-4">
-								<div class="w-1/4 mr-4">
+								<div class="w-1/3 lg:w-1/4 mr-4">
 									<?php _e('Email', 'shop'); ?>:
 								</div>
 								<div class="flex flex-col">
@@ -71,7 +71,7 @@
 								</div>
 							</div>
 							<div class="flex mb-4">
-								<div class="w-1/4 mr-4">
+								<div class="w-1/3 lg:w-1/4 mr-4">
 									<?php _e('Адрес', 'shop'); ?>:
 								</div>
 								<div class="flex flex-col">

@@ -23,8 +23,9 @@
 <body <?php echo body_class(); ?>>
   <section id="content" role="main">
     <header class="header py-4 md:py-3">
-      <div class="container mx-auto px-6 lg:px-0">
+      <div class="container mx-auto px-3 lg:px-0">
         <?php get_template_part('blocks/header/header-top'); ?>
         <?php get_template_part('blocks/header/header-bottom'); ?>
+        <?php get_template_part('blocks/header/header-mobile-cover'); ?>
       </div>
     </header>

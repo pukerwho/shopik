@@ -6,7 +6,7 @@
     </div>
   </div>
   <div class="header_right flex items-center">
-    <div>
+    <div class="hidden lg:block">
       <?php wp_nav_menu([
         'theme_location' => 'head_bottom_menu',
         'menu_id' => 'head_menu',
@@ -25,5 +25,10 @@
         ?>
       </span>
     </a>
+  </div>
+  <div class="flex lg:hidden header_mobile_menu">
+    <span></span>
+    <span></span>
+    <span></span>
   </div>
 </div>

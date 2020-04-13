@@ -1,3 +1,11 @@
+//Mobile Menu
+let mobileMenuBtn = document.querySelector('.header_mobile_menu');
+let mobileMenuCover = document.querySelector('.header_mobile_cover');
+mobileMenuBtn.addEventListener('click', function(){
+  mobileMenuBtn.classList.toggle('open');
+  mobileMenuCover.classList.toggle('open');
+});
+
 //Click Order
 let bgModal = document.querySelector('.modal_bg');
 let modalsClickId = document.querySelectorAll('.modal_click_js');

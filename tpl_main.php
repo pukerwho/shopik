@@ -7,25 +7,22 @@ Template Name: ГЛАВНАЯ
 <?php get_header(); ?> 
 
 <section id="hero">
-	<div class="hero px-6 mb-20">
+	<div class="hero px-3 lg:px-6 mb-20">
 		<div class="brand h-full" style="background: url(<?php echo get_theme_mod( 'first_screen_img' ); ?>); background-size: cover; background-position: 50%;">
 			<div class="container mx-auto h-full">
-				<div class="flex flex-col justify-center h-full">
-					<div>
-						<div class="brand_title mb-4">
-							<span><?php echo get_theme_mod( 'first_screen_title' ); ?></span>
-						</div>
-						<div class="brand_subtitle mb-10">
-							<?php echo get_theme_mod( 'first_screen_subtitle' ); ?>
-						</div>
-						<div class="brand_description">
-							<?php echo get_theme_mod( 'first_screen_description' ); ?>
-						</div>	
+				<div class="flex flex-col items-center lg:items-start justify-center h-full">
+					<div class="brand_title mb-4">
+						<span><?php echo get_theme_mod( 'first_screen_title' ); ?></span>
+					</div>
+					<div class="brand_subtitle mb-10">
+						<?php echo get_theme_mod( 'first_screen_subtitle' ); ?>
+					</div>
+					<div class="brand_description">
+						<?php echo get_theme_mod( 'first_screen_description' ); ?>
 					</div>
 				</div>
 			</div>
 		</div>
-		
 	</div>
 </section>
 
@@ -44,7 +41,7 @@ Template Name: ГЛАВНАЯ
 					'parent' => 0,
 				]); 
 				foreach(array_slice($categories_top,0,3) as $category_top): ?>
-					<div class="w-full lg:w-1/3 p-4 mb-8">
+					<div class="w-full lg:w-1/3 p-3 lg:p-4 mb-4 lg:mb-8">
 						<?php 
 							$thumbnail_id = get_woocommerce_term_meta( $category_top->term_id, 'thumbnail_id', true );
 							$image_cat = wp_get_attachment_url( $thumbnail_id ); 
