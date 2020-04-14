@@ -67,7 +67,7 @@ Template Name: ГЛАВНАЯ
 		</div>
 		<div class="w-full">
 			<div class="btn_more text-center">
-				<a href="#">
+				<a href="/store">
 					<?php _e('Каталог', 'shop'); ?>
 				</a>
 			</div>
@@ -80,7 +80,7 @@ Template Name: ГЛАВНАЯ
 		<div class="container mx-auto">
 			<div class="w-4/5 flex mx-auto">
 				<div class="mr-8">
-					<img src="<?php bloginfo('template_url'); ?>/assets/img/square.svg" alt="" width="150px">
+					<img src="<?php bloginfo('template_url'); ?>/assets/img/square.svg" alt="" width="150px" class="about_icon">
 				</div>
 				<div>
 					<h2 class="mb-4 leading-none"><?php _e('О нас', 'shop'); ?></h2>
@@ -202,6 +202,13 @@ Template Name: ГЛАВНАЯ
 							</div>
 						</div>
 					<?php wp_reset_postdata(); endwhile; endif;  ?>
+				</div>
+				<div class="w-full">
+					<div class="btn_more text-center">
+						<a href="/store">
+							<?php _e('Каталог', 'shop'); ?>
+						</a>
+					</div>
 				</div>
 			</div>
 		</div>
