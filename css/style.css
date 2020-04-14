@@ -41408,7 +41408,7 @@ input, textarea {
   margin-bottom: 1rem; }
 
 .comment-form-rating {
-  margin-bottom: 1rem; }
+  margin-bottom: 0.5rem; }
 
 .woocommerce p.stars:hover a::before {
   color: #eeba64; }
@@ -41419,13 +41419,14 @@ input, textarea {
 
 .woocommerce p.stars a::before {
   width: 1.5em;
-  height: 1.5em; }
+  height: 1.5em;
+  font-size: 1.5rem; }
 
 .comment-form-author label, .comment-form-email label {
   min-width: 75px;
   display: inline-block; }
 
-.form-submit {
+.form-submit input[type="submit"] {
   background-color: #a46497;
   color: #fff;
   -webkit-font-smoothing: antialiased; }
@@ -41784,6 +41785,8 @@ input, textarea {
   font-size: 0.9rem; }
 
 .summary .price {
+  margin-bottom: 1rem; }
+.summary .description {
   margin-bottom: 1rem; }
 .summary .quantity input {
   height: 100%; }
