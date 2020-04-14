@@ -41395,10 +41395,40 @@ input, textarea {
 .woocommerce-checkout h3 {
   font-size: 1.5rem;
   margin-bottom: 1rem; }
-.woocommerce-checkout .woocommerce-billing-fields {
+.woocommerce-checkout .woocommerce-billing-fields__field-wrapper {
   margin-bottom: 1.5rem; }
 .woocommerce-checkout .woocommerce-additional-fields {
   margin-bottom: 1.5rem; }
+
+.woocommerce-Reviews-title {
+  font-size: 1.5rem;
+  margin-bottom: 1rem; }
+
+.woocommerce-noreviews {
+  margin-bottom: 1rem; }
+
+.comment-form-rating {
+  margin-bottom: 1rem; }
+
+.woocommerce p.stars:hover a::before {
+  color: #eeba64; }
+
+.woocommerce p.stars a {
+  width: 1.5em;
+  height: 1.5em; }
+
+.woocommerce p.stars a::before {
+  width: 1.5em;
+  height: 1.5em; }
+
+.comment-form-author label, .comment-form-email label {
+  min-width: 75px;
+  display: inline-block; }
+
+.form-submit {
+  background-color: #a46497;
+  color: #fff;
+  -webkit-font-smoothing: antialiased; }
 
 /* PAGES */
 .hero {
@@ -41759,5 +41789,10 @@ input, textarea {
   height: 100%; }
 .summary .woocommerce-variation-add-to-cart {
   display: flex; }
+
+.related.products h2 {
+  font-size: 1.75rem;
+  margin-bottom: 1rem;
+  text-align: center; }
 
 /*# sourceMappingURL=style.css.map */
