@@ -1,3 +1,21 @@
+//Animation
+function onEntry(entry) {
+  entry.forEach(change => {
+    if (change.isIntersecting) {
+      change.target.classList.add('shop-show');
+    }
+  });
+}
+
+let options = {
+  threshold: [0.5] };
+let observer = new IntersectionObserver(onEntry, options);
+let elements = document.querySelectorAll('.shop-animate');
+
+for (let elm of elements) {
+  observer.observe(elm);
+}
+
 //Mobile Menu
 let mobileMenuBtn = document.querySelector('.header_mobile_menu');
 let mobileMenuCover = document.querySelector('.header_mobile_cover');
