@@ -79,12 +79,12 @@ Template Name: ГЛАВНАЯ
 	<div class="about pb-20">
 		<div class="container mx-auto">
 			<div class="w-4/5 flex flex-col lg:flex-row mx-auto">
-				<div class="mr-8">
+				<div class="mr-0 lg:mr-8 mb-8 lg:mb-8">
 					<img src="<?php bloginfo('template_url'); ?>/assets/img/square.svg" alt="" width="150px" class="about_icon">
 				</div>
 				<div>
 					<h2 class="mb-4 leading-none"><?php _e('О нас', 'shop'); ?></h2>
-					<div class="w-full lg:w-2/3 about_text mb-8">
+					<div class="w-full lg:w-2/3 about_text mb-0 lg:mb-8">
 						<?php echo get_theme_mod( 'about_main_page_text' ); ?>
 					</div>
 				</div>
