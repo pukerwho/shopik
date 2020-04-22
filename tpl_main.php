@@ -78,7 +78,7 @@ Template Name: ГЛАВНАЯ
 <section id="about">
 	<div class="about pb-20">
 		<div class="container mx-auto">
-			<div class="w-4/5 flex mx-auto">
+			<div class="w-4/5 flex flex-col lg:flex-row mx-auto">
 				<div class="mr-8">
 					<img src="<?php bloginfo('template_url'); ?>/assets/img/square.svg" alt="" width="150px" class="about_icon">
 				</div>
