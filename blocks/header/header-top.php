@@ -33,7 +33,7 @@
       </div>
     </div>
     <div class="hidden lg:block mr-4">
-      <div class="flex mr-4">
+      <div class="flex items-center mr-4">
         <img src="<?php bloginfo('template_url'); ?>/assets/img/mail.svg" alt="" width="15px" class="mr-2 mt-1 opacity-75">
         <a href="mailto:<?php echo get_theme_mod( 'contact_email' ); ?>" class="mt-1">
           <?php echo get_theme_mod( 'contact_email' ); ?>
