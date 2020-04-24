@@ -1,6 +1,6 @@
 <div class="header_bottom flex items-center justify-between">
   <div class="header_left">
-    <div class="logo flex">
+    <div class="logo flex items-center">
       <img src="<?php bloginfo('template_url'); ?>/assets/img/shopik-logo-4.svg" alt="" width="40px" class="mr-4">
       <a href="<?php echo home_url(); ?>" class="leading-loose">Shopik</a>
     </div>
