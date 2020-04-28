@@ -16,6 +16,7 @@ for (let elm of elements) {
   observer.observe(elm);
 }
 
+
 //Mobile Menu
 let mobileMenuBtn = document.querySelector('.header_mobile_menu');
 let mobileMenuCover = document.querySelector('.header_mobile_cover');
